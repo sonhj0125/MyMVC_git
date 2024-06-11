@@ -1,0 +1,45 @@
+>>> A user <<<
+
+# Index Mapping Information -- 공통
+/=common.controller.IndexController
+/index.up=common.controller.IndexController
+/error.up=common.controller.ErrorController
+
+# Member Mapping Information
+/member/memberRegister.up=member.controller.MemberRegister
+
+
+>>> B user <<<
+
+# Index Mapping Information
+/=common.controller.IndexController
+/index.up=common.controller.IndexController
+/error.up=common.controller.ErrorController
+
+# Product Mapping Information
+/product/productRegister.up=product.controller.ProductRegister
+
+이런 경우 깃허브 충돌..!!
+A 유저의 Member와 Product가 충돌함 5, 6번 줄 겹침
+
+# 공통영역 #
+/=common.controller.IndexController
+/index.up=common.controller.IndexController
+/error.up=common.controller.ErrorController
+
+# A유저 영역 start #
+/member/memberRegister.up=member.controller.MemberRegister
+
+
+
+
+# A유저 영역 End #
+
+# B유저 영역 start #
+/product/productRegister.up=product.controller.ProductRegister
+
+
+
+
+
+# B유저 영역 End #
